@@ -74,7 +74,8 @@ h2{font-weight:500;font-size:.85rem;letter-spacing:.25em;text-transform:uppercas
 .mirage .cap small{display:block;max-width:1080px;margin:6px auto 0;color:var(--muted);font-size:.85rem}
 
 /* videos */
-.vids{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.vids{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.vids{grid-template-columns:1fr}}
 .vid iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:4px;background:#000}
 .vid p{margin-top:10px;font-size:.92rem;color:var(--muted)}
@@ -90,6 +91,13 @@ h2{font-weight:500;font-size:.85rem;letter-spacing:.25em;text-transform:uppercas
 .about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
 @media(max-width:760px){.about{grid-template-columns:1fr;gap:28px}}
 .about p{margin-bottom:16px;font-size:1.05rem}
+.me{width:100%;height:auto;border-radius:6px;margin-bottom:24px;filter:grayscale(.15)}
+.lead{font-size:1.45rem!important;font-weight:400;line-height:1.35}
+.then{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+.show{margin-bottom:24px}.show img{width:100%;height:auto;border-radius:4px}.show figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
+@media(max-width:820px){.then{grid-template-columns:1fr 1fr}}
+.then img{width:100%;height:auto;border-radius:4px}
+.then figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
 .about .it{color:var(--muted);font-size:.95rem;font-style:italic}
 .facts{list-style:none;font-size:.92rem}
 .facts li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}
@@ -117,7 +125,7 @@ footer small{color:var(--muted);font-size:.8rem}
     <li><a href="#ep">EP</a></li>
     <li><a href="#video">Video</a></li>
     <li class="hide-s"><a href="#releases">Releases</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#about">Story</a></li>
     <li><a href="#press">Press</a></li>
   </ul>
 </div></nav>
@@ -137,7 +145,7 @@ footer small{color:var(--muted);font-size:.8rem}
     <div class="out" id="out">Out now — listen everywhere.</div>
     <div class="btns">
       <a class="btn primary" href="https://open.spotify.com/artist/4C6z7eaZzhKLg6Se5QxqX4" target="_blank" rel="noopener">Follow on Spotify</a>
-      <a class="btn" href="https://www.youtube.com/channel/UChl8n9bceR3g8uyIVcXjyVA" target="_blank" rel="noopener">YouTube</a>
+      <a class="btn" href="https://www.youtube.com/@K-Attivo" target="_blank" rel="noopener">YouTube</a>
       <a class="btn" href="#ep">Tracklist</a>
     </div>
     <div class="label">Release: 20 November 2026 · Spotify, Apple Music, YouTube Music, TikTok and all stores.</div>
@@ -164,6 +172,10 @@ footer small{color:var(--muted);font-size:.8rem}
   <h2>Video</h2>
   <div class="vids">
     <div class="vid">
+      <iframe src="https://www.youtube-nocookie.com/embed/tD71JmDjrAA" title="Sunrise — K-Attivo &amp; Jazzy Trax (official video)" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p><b>Sunrise</b> — K-Attivo &amp; Jazzy Trax · official video</p>
+    </div>
+    <div class="vid">
       <iframe src="https://www.youtube-nocookie.com/embed/Y6bjJ7N9uzA" title="Neon Ganesha — Jazzy Trax &amp; K-Attivo" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p><b>Neon Ganesha</b> — Jazzy Trax &amp; K-Attivo</p>
     </div>
@@ -183,25 +195,49 @@ footer small{color:var(--muted);font-size:.8rem}
     <div><b>The Loop</b><span>with Jazzy Trax · 2026</span></div>
     <div><b>Battito</b><span>with Jazzy Trax · 2026</span></div>
     <div><b>Once Upon a Time</b><span>single · 2026</span></div>
+    <div><b>The President</b><span>feat. Maurizio Franchi · Moonklift Records · 2020</span></div>
+    <div><b>Prologue</b><span>album · UME Label · 2015 (withdrawn)</span></div>
+    <div><b>Watch</b><span>Technomachine Vol. 6 · 2005</span></div>
   </div>
   <p class="label">All releases on Krystal Records. <a href="https://open.spotify.com/artist/4C6z7eaZzhKLg6Se5QxqX4" target="_blank" rel="noopener">Listen on Spotify →</a></p>
 </div></section>
 
 <section id="about"><div class="wrap">
-  <h2>About</h2>
+  <h2>Story</h2>
   <div class="about">
     <div>
-      <p>K-Attivo is an electronic producer from Turin, Italy. At 43, after ten years away from music, he went back to the studio — starting from the songs he had kept in a drawer.</p>
-      <p>In 2026 he released "Once Upon a Time" and, together with Jazzy Trax, "Battito", "The Loop", "Neon Ganesha" and "Sunrise", all on Krystal Records. ELEKTROMUSIQUE, his first EP, is five songs of synthpop, synthwave and darkwave — night drives, mirages and starting over.</p>
-      <p class="it">Produttore elettronico di Torino, tornato alla musica dopo dieci anni. ELEKTROMUSIQUE è il suo primo EP.</p>
+      <p class="lead">ELEKTROMUSIQUE wasn't always an EP. In 2013 it was a radio show.</p>
+      <p>Born in 1983, K-Attivo studied violin and piano from the age of seven to twelve. Then electronic music took over: first tracks made with Music 2000, Magix Music Maker and Fruity Loops, given away for free online and on eMule from the early 2000s.</p>
+      <p>His first official release came in 2005, with a twist: producer Bart Spinelli picked his track "Watch" for the compilation <em>Technomachine Vol. 6: Generazione Androide</em> — next to Sirol Noizer and Bart Spinelli himself — but credited it under his real name instead of K-Attivo. It's still the only track in his catalogue without his alias. <a href="https://open.spotify.com/track/7oFxbFhEVX3VYR4Yak9u9a" target="_blank" rel="noopener">Listen to "Watch" →</a></p>
+      <p>In the following decade he played the underground clubs of Turin and its surroundings. In July 2013 he launched <em>Elektromusique</em> on Radio Studio Life; in 2014, during its second season, he co-founded Lucky Wave Radio with Jazzy Trax, DJ Princex and Cesare Borrometi.</p>
+      <p>Through his collaboration with Universal Music Emotion he released his first album, <em>Prologue</em> (UME Label, 2015): "By Night", "Eclipse", "Telemetria Verticale", "Awake", "Monday" and "Frequency Response" with Maurizio Franchi, "New Beginning" with Newsoundorder, plus a remix by SirolNoiz3r — later withdrawn from the stores.</p>
+      <p>He worked with Dookieb, Golden Fingers, Basterd.aka.Kim, SirolNoizer, Ricky One and Christian Express, started SKIMIKS (2015, with Maurizio Franchi — with whom he later released "The President" as DJ K-Attivo on Moonklift Records, in the 2020 compilation <em>Dark Side, Vol. 1</em>) and, in 2016, the duo Deep Strangers — born as Deep Brothers, then renamed. Today it's also the title of a track on the EP.</p>
+      <p>Then he stopped. For ten years the songs stayed in a drawer.</p>
+      <p>In 2026 he opened it. With Jazzy Trax he released "Battito", "The Loop", "Neon Ganesha" and "Sunrise" on Krystal Records — and now his first EP takes the name of the show where it all started: five songs of synthpop, synthwave and darkwave about mirages, nights and starting over.</p>
+      <p class="it">Nato nel 1983, violino e pianoforte dai 7 ai 12 anni, poi club e radio a Torino: nel 2013 conduceva "Elektromusique". Dopo dieci anni di pausa, quel nome torna come il suo primo EP.</p>
     </div>
-    <ul class="facts">
-      <li><span>Based in</span><span>Turin, Italy</span></li>
-      <li><span>Genre</span><span>synthpop · synthwave · french touch</span></li>
-      <li><span>Label</span><span>Krystal Records</span></li>
-      <li><span>Also</span><span>co-founder, Lucky Wave Radio</span></li>
-      <li><span>Background</span><span>classical piano &amp; violin</span></li>
-    </ul>
+    <div>
+      <img class="me" src="img/kappa.jpg" alt="K-Attivo with headphones, 2014" width="640" height="800">
+      <ul class="facts">
+        <li><span>Born</span><span>1983</span></li>
+        <li><span>Based in</span><span>Turin, Italy</span></li>
+        <li><span>Genre</span><span>synthpop · synthwave · french touch</span></li>
+        <li><span>Label</span><span>Krystal Records</span></li>
+        <li><span>Radio</span><span>Elektromusique (2013) · co-founder, Lucky Wave Radio</span></li>
+        <li><span>Past projects</span><span>SKIMIKS · Deep Strangers</span></li>
+        <li><span>Background</span><span>violin &amp; piano, age 7–12</span></li>
+      </ul>
+    </div>
+  </div>
+  <h2 style="margin-top:64px">Before the break</h2>
+  <figure class="show"><img src="img/then/elektromusique-show.jpg" alt="Poster of the Elektromusique radio show on Lucky Wave Radio" loading="lazy"><figcaption>The original Elektromusique: every Wednesday, 8–10 pm, on Lucky Wave Radio · 2014</figcaption></figure>
+  <div class="then">
+    <figure><img src="img/then/elektromusique-radio-2013.jpg" alt="K-Attivo and Jazzy Trax in the radio studio" loading="lazy" width="600" height="450"><figcaption>With Jazzy Trax, an episode of Elektromusique · 2013</figcaption></figure>
+    <figure><img src="img/then/caffe-leri-2013.jpg" alt="K-Attivo DJing at Caffè Leri" loading="lazy" width="600" height="900"><figcaption>DJ set, Caffè Leri · 2013 · photo Roberta Bernardello</figcaption></figure>
+    <figure><img src="img/then/elektromusique-dookieb.jpg" alt="K-Attivo and Dookieb in the studio" loading="lazy" width="600" height="556"><figcaption>With Dookieb, guest on Elektromusique</figcaption></figure>
+    <figure><img src="img/then/prologue-2015.jpg" alt="Cover of the album Prologue by Dj K-Attivo" loading="lazy"><figcaption>Prologue, the first album · UME Label · 2015</figcaption></figure>
+    <figure><img src="img/then/glitch-2017.jpg" alt="K-Attivo DJing, glitch photo" loading="lazy"><figcaption>DJ set · 2017</figcaption></figure>
+    <figure><img src="img/then/deep-strangers-2017.jpg" alt="K-Attivo at the console at Cuore Club" loading="lazy" width="600" height="450"><figcaption>Deep Strangers at Cuore Club, Casale · 2017</figcaption></figure>
   </div>
 </div></section>
 
@@ -210,7 +246,7 @@ footer small{color:var(--muted);font-size:.8rem}
   <div class="press">
     <div class="box">
       <h3>Short bio</h3>
-      <textarea id="bio" readonly>K-Attivo is an electronic producer from Turin, Italy. At 43, after a ten-year break, he went back to making music, starting from the songs he had kept in a drawer. In 2026 he released "Once Upon a Time" and, with Jazzy Trax, "Battito", "The Loop", "Neon Ganesha" and "Sunrise", all on Krystal Records. His first EP, ELEKTROMUSIQUE (synthpop / synthwave / darkwave), is out on November 20, 2026.</textarea>
+      <textarea id="bio" readonly>K-Attivo is an electronic producer from Turin, Italy. At 43, after a ten-year break, he went back to making music, starting from the songs he had kept in a drawer. In 2026 he released "Once Upon a Time" and, with Jazzy Trax, "Battito", "The Loop", "Neon Ganesha" and "Sunrise", all on Krystal Records. His first EP, ELEKTROMUSIQUE (synthpop / synthwave / darkwave), named after the radio show he hosted in 2013, is out on November 20, 2026.</textarea>
       <button class="btn copy" type="button" data-copy="bio">Copy bio</button>
     </div>
     <div class="box">
@@ -218,7 +254,7 @@ footer small{color:var(--muted);font-size:.8rem}
       <p>Cover in high resolution (3000×3000) for press and playlists.</p>
       <a class="btn" href="img/elektromusique-ep-cover-3000.jpg" download>Download cover</a>
       <p style="margin-top:22px">Press, playlists, radio and collaborations:</p>
-      <a class="btn primary" href="mailto:kappa.attivo@gmail.com">kappa.attivo@gmail.com</a>
+      <button class="btn primary" type="button" id="mail">Show email</button>
     </div>
   </div>
 </div></section>
@@ -227,8 +263,11 @@ footer small{color:var(--muted);font-size:.8rem}
   <div class="social">
     <a class="btn" href="https://www.instagram.com/kappa.attivo/" target="_blank" rel="noopener">Instagram</a>
     <a class="btn" href="https://www.tiktok.com/@kappa.attivo" target="_blank" rel="noopener">TikTok</a>
+    <a class="btn" href="https://www.facebook.com/djkattivo" target="_blank" rel="noopener">Facebook</a>
+    <a class="btn" href="https://soundcloud.com/djk-attivo" target="_blank" rel="noopener">SoundCloud</a>
+    <a class="btn" href="https://x.com/ilkattivo" target="_blank" rel="noopener">X</a>
     <a class="btn" href="https://open.spotify.com/artist/4C6z7eaZzhKLg6Se5QxqX4" target="_blank" rel="noopener">Spotify</a>
-    <a class="btn" href="https://www.youtube.com/channel/UChl8n9bceR3g8uyIVcXjyVA" target="_blank" rel="noopener">YouTube</a>
+    <a class="btn" href="https://www.youtube.com/@K-Attivo" target="_blank" rel="noopener">YouTube</a>
     <a class="btn" href="https://www.instagram.com/krystal_records/" target="_blank" rel="noopener">Krystal Records</a>
   </div>
   <small>© 2026 K-Attivo · Turin, Italy</small>
@@ -245,6 +284,12 @@ footer small{color:var(--muted);font-size:.8rem}
     setTimeout(tick,30000);
   }
   tick();
+  var mb=document.getElementById('mail');
+  mb.addEventListener('click',function(){
+    var u=['kappa','attivo'].join('.'),d=['gmail','com'].join('.'),a=u+String.fromCharCode(64)+d;
+    if(mb.dataset.on){location.href='mai'+'lto:'+a;return;}
+    mb.textContent=a;mb.dataset.on='1';
+  });
   document.querySelectorAll('[data-copy]').forEach(function(b){
     b.addEventListener('click',function(){
       var el=document.getElementById(b.dataset.copy);
