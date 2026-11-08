@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-Attivo — ELEKTROMUSIQUE EP · out 20.11.2026</title>
+<meta name="description" content="K-Attivo, electronic producer from Turin. ELEKTROMUSIQUE EP — synthpop, synthwave, darkwave — out November 20, 2026 on Krystal Records.">
+<meta property="og:title" content="K-Attivo — ELEKTROMUSIQUE EP">
+<meta property="og:description" content="Five tracks of synthpop, synthwave and darkwave from Turin. Out 20.11.2026 on Krystal Records.">
+<meta property="og:image" content="https://k-attivo.github.io/img/og.jpg">
+<meta property="og:url" content="https://k-attivo.github.io/">
+<meta property="og:type" content="music.album">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0e0f12; --bg2:#15171c; --line:#262a33; --text:#ecebe6; --muted:#9a9ca3;
+  --accent:#6f9cf0; --sand:#d9924a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Jost,system-ui,sans-serif;font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,video,iframe{display:block;max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(14,15,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-weight:600;letter-spacing:.18em;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.9rem}
+nav ul a{text-decoration:none;color:var(--muted)} nav ul a:hover{color:var(--text)}
+@media(max-width:640px){nav ul{gap:14px;font-size:.82rem} nav ul li.hide-s{display:none}}
+
+/* hero */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+@media(max-width:820px){.hero{padding:32px 0 48px}.hero .wrap{grid-template-columns:1fr;gap:28px}}
+.cover{height:auto;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.55);width:100%;aspect-ratio:1/1;object-fit:cover}
+.kicker{font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);font-weight:500}
+h1{font-weight:500;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;letter-spacing:.02em;margin:10px 0 6px}
+.by{font-size:1.1rem;color:var(--muted);margin-bottom:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.tags span{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:3px 12px;color:var(--muted)}
+.count{display:flex;gap:18px;margin-bottom:28px}
+.count div{text-align:center;min-width:56px}
+.count b{display:block;font-size:2rem;font-weight:500;line-height:1}
+.count small{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.out{font-size:1.4rem;font-weight:500;color:var(--sand);margin-bottom:28px;display:none}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;text-decoration:none;font-weight:500;font-size:.92rem;padding:11px 20px;border-radius:4px;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.btn:hover{border-color:var(--accent)} .btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.label{margin-top:20px;font-size:.85rem;color:var(--muted)}
+
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-weight:500;font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+
+/* tracklist */
+.tracks{list-style:none;counter-reset:t}
+.tracks li{counter-increment:t;display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.tracks li::before{content:counter(t,decimal-leading-zero);color:var(--muted);font-size:.85rem}
+.tracks h3{font-weight:500;font-size:1.25rem}
+.tracks p{color:var(--muted);font-size:.92rem}
+.tracks .bpm{font-size:.78rem;color:var(--muted);white-space:nowrap}
+@media(max-width:560px){.tracks li{grid-template-columns:34px 1fr}.tracks .bpm{display:none}}
+
+/* mirage band */
+.mirage{position:relative;overflow:hidden;padding:0;border-top:1px solid var(--line)}
+.mirage video{width:100%;height:68vh;min-height:380px;object-fit:cover;filter:saturate(.95)}
+.mirage .cap{position:absolute;inset:auto 0 0 0;padding:28px 20px 34px;background:linear-gradient(transparent,rgba(14,15,18,.85))}
+.mirage .cap p{max-width:1080px;margin:0 auto;font-size:clamp(1.2rem,3vw,1.8rem);font-weight:400}
+.mirage .cap small{display:block;max-width:1080px;margin:6px auto 0;color:var(--muted);font-size:.85rem}
+
+/* videos */
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:720px){.vids{grid-template-columns:1fr}}
+.vid iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:4px;background:#000}
+.vid p{margin-top:10px;font-size:.92rem;color:var(--muted)}
+.vid p b{color:var(--text);font-weight:500}
+
+/* releases */
+.rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.rel div{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:20px}
+.rel b{display:block;font-weight:500;font-size:1.05rem}
+.rel span{font-size:.85rem;color:var(--muted)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+@media(max-width:760px){.about{grid-template-columns:1fr;gap:28px}}
+.about p{margin-bottom:16px;font-size:1.05rem}
+.about .it{color:var(--muted);font-size:.95rem;font-style:italic}
+.facts{list-style:none;font-size:.92rem}
+.facts li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}
+.facts li span:first-child{color:var(--muted)}
+
+/* press */
+.press{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:720px){.press{grid-template-columns:1fr}}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:24px}
+.box h3{font-weight:500;font-size:1.05rem;margin-bottom:10px}
+.box p{font-size:.92rem;color:var(--muted);margin-bottom:14px}
+.box textarea{width:100%;height:150px;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:4px;padding:12px;font:inherit;font-size:.88rem;resize:vertical}
+.copy{margin-top:10px;cursor:pointer;background:none;color:var(--text)}
+
+footer{border-top:1px solid var(--line);padding:48px 0 60px}
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+footer small{color:var(--muted);font-size:.8rem}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">K-ATTIVO</a>
+  <ul>
+    <li><a href="#ep">EP</a></li>
+    <li><a href="#video">Video</a></li>
+    <li class="hide-s"><a href="#releases">Releases</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#press">Press</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <img class="cover" src="img/elektromusique-ep.webp" alt="ELEKTROMUSIQUE EP cover: a blue label on a stone wall in a street in Turin" width="1000" height="1000">
+  <div>
+    <div class="kicker">New EP · Krystal Records</div>
+    <h1>ELEKTROMUSIQUE</h1>
+    <div class="by">K-Attivo</div>
+    <div class="tags"><span>synthpop</span><span>synthwave</span><span>darkwave</span><span>dream pop</span></div>
+    <div class="count" id="count" aria-label="Countdown to release">
+      <div><b id="d">–</b><small>days</small></div>
+      <div><b id="h">–</b><small>hours</small></div>
+      <div><b id="m">–</b><small>min</small></div>
+    </div>
+    <div class="out" id="out">Out now — listen everywhere.</div>
+    <div class="btns">
+      <a class="btn primary" href="https://open.spotify.com/artist/4C6z7eaZzhKLg6Se5QxqX4" target="_blank" rel="noopener">Follow on Spotify</a>
+      <a class="btn" href="https://www.youtube.com/channel/UChl8n9bceR3g8uyIVcXjyVA" target="_blank" rel="noopener">YouTube</a>
+      <a class="btn" href="#ep">Tracklist</a>
+    </div>
+    <div class="label">Release: 20 November 2026 · Spotify, Apple Music, YouTube Music, TikTok and all stores.</div>
+  </div>
+</div></header>
+
+<section id="ep"><div class="wrap">
+  <h2>Tracklist</h2>
+  <ol class="tracks">
+    <li><div><h3>Just a Mirage</h3><p>Synthpop with a darkwave edge and an eastern-flavoured lead. Walking through the desert toward water that isn't there.</p></div><span class="bpm">122 bpm</span></li>
+    <li><div><h3>Musique</h3><p>Synthpop sung in French by a robotic voice: the moment the music starts and everything bad goes away.</p></div><span class="bpm">120 bpm</span></li>
+    <li><div><h3>Like an Illusion</h3><p>Dark synthwave with a filtered female voice. "I ask the night to speak to me."</p></div><span class="bpm">133 bpm</span></li>
+    <li><div><h3>Deep Strangers</h3><p>Synthwave and dream pop, spoken word. "Let me play what I love — I hope you'll love me."</p></div><span class="bpm">130 bpm</span></li>
+    <li><div><h3>I am Reborn</h3><p>Dream pop with strings. From a closed room to a clear sky.</p></div><span class="bpm">139 bpm</span></li>
+  </ol>
+</div></section>
+
+<div class="mirage">
+  <video src="media/miraggio.mp4" poster="img/miraggio-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Animated desert scene from the Just a Mirage visual"></video>
+  <div class="cap"><p>"…but it's just a mirage."</p><small>From the visual world of ELEKTROMUSIQUE EP.</small></div>
+</div>
+
+<section id="video"><div class="wrap">
+  <h2>Video</h2>
+  <div class="vids">
+    <div class="vid">
+      <iframe src="https://www.youtube-nocookie.com/embed/Y6bjJ7N9uzA" title="Neon Ganesha — Jazzy Trax &amp; K-Attivo" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p><b>Neon Ganesha</b> — Jazzy Trax &amp; K-Attivo</p>
+    </div>
+    <div class="vid">
+      <iframe src="https://www.youtube-nocookie.com/embed/ywFq2icpxKI" title="The Loop — Jazzy Trax &amp; K-Attivo" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p><b>The Loop</b> — Jazzy Trax &amp; K-Attivo</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="releases"><div class="wrap">
+  <h2>Releases</h2>
+  <div class="rel">
+    <div><b>ELEKTROMUSIQUE EP</b><span>EP · 20.11.2026</span></div>
+    <div><b>Sunrise</b><span>with Jazzy Trax · 30.10.2026</span></div>
+    <div><b>Neon Ganesha</b><span>with Jazzy Trax · 2026</span></div>
+    <div><b>The Loop</b><span>with Jazzy Trax · 2026</span></div>
+    <div><b>Battito</b><span>with Jazzy Trax · 2026</span></div>
+    <div><b>Once Upon a Time</b><span>single · 2026</span></div>
+  </div>
+  <p class="label">All releases on Krystal Records. <a href="https://open.spotify.com/artist/4C6z7eaZzhKLg6Se5QxqX4" target="_blank" rel="noopener">Listen on Spotify →</a></p>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <div class="about">
+    <div>
+      <p>K-Attivo is an electronic producer from Turin, Italy. At 43, after ten years away from music, he went back to the studio — starting from the songs he had kept in a drawer.</p>
+      <p>In 2026 he released "Once Upon a Time" and, together with Jazzy Trax, "Battito", "The Loop", "Neon Ganesha" and "Sunrise", all on Krystal Records. ELEKTROMUSIQUE, his first EP, is five songs of synthpop, synthwave and darkwave — night drives, mirages and starting over.</p>
+      <p class="it">Produttore elettronico di Torino, tornato alla musica dopo dieci anni. ELEKTROMUSIQUE è il suo primo EP.</p>
+    </div>
+    <ul class="facts">
+      <li><span>Based in</span><span>Turin, Italy</span></li>
+      <li><span>Genre</span><span>synthpop · synthwave · french touch</span></li>
+      <li><span>Label</span><span>Krystal Records</span></li>
+      <li><span>Also</span><span>co-founder, Lucky Wave Radio</span></li>
+      <li><span>Background</span><span>classical piano &amp; violin</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="press"><div class="wrap">
+  <h2>Press &amp; contacts</h2>
+  <div class="press">
+    <div class="box">
+      <h3>Short bio</h3>
+      <textarea id="bio" readonly>K-Attivo is an electronic producer from Turin, Italy. At 43, after a ten-year break, he went back to making music, starting from the songs he had kept in a drawer. In 2026 he released "Once Upon a Time" and, with Jazzy Trax, "Battito", "The Loop", "Neon Ganesha" and "Sunrise", all on Krystal Records. His first EP, ELEKTROMUSIQUE (synthpop / synthwave / darkwave), is out on November 20, 2026.</textarea>
+      <button class="btn copy" type="button" data-copy="bio">Copy bio</button>
+    </div>
+    <div class="box">
+      <h3>Artwork &amp; contact</h3>
+      <p>Cover in high resolution (3000×3000) for press and playlists.</p>
+      <a class="btn" href="img/elektromusique-ep-cover-3000.jpg" download>Download cover</a>
+      <p style="margin-top:22px">Press, playlists, radio and collaborations:</p>
+      <a class="btn primary" href="mailto:kappa.attivo@gmail.com">kappa.attivo@gmail.com</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="social">
+    <a class="btn" href="https://www.instagram.com/kappa.attivo/" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn" href="https://www.tiktok.com/@kappa.attivo" target="_blank" rel="noopener">TikTok</a>
+    <a class="btn" href="https://open.spotify.com/artist/4C6z7eaZzhKLg6Se5QxqX4" target="_blank" rel="noopener">Spotify</a>
+    <a class="btn" href="https://www.youtube.com/channel/UChl8n9bceR3g8uyIVcXjyVA" target="_blank" rel="noopener">YouTube</a>
+    <a class="btn" href="https://www.instagram.com/krystal_records/" target="_blank" rel="noopener">Krystal Records</a>
+  </div>
+  <small>© 2026 K-Attivo · Turin, Italy</small>
+</div></footer>
+
+<script>
+(function(){
+  var rel=new Date('2026-11-20T00:00:00+01:00').getTime();
+  function tick(){
+    var t=rel-Date.now();
+    if(t<=0){document.getElementById('count').style.display='none';document.getElementById('out').style.display='block';return;}
+    var d=Math.floor(t/864e5),h=Math.floor(t%864e5/36e5),m=Math.floor(t%36e5/6e4);
+    document.getElementById('d').textContent=d;document.getElementById('h').textContent=h;document.getElementById('m').textContent=m;
+    setTimeout(tick,30000);
+  }
+  tick();
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.dataset.copy);
+      try{navigator.clipboard.writeText(el.value);}catch(e){el.select();document.execCommand('copy');}
+      b.textContent='Copied';setTimeout(function(){b.textContent='Copy bio'},1500);
+    });
+  });
+})();
+</script>
+</body>
+</html>
